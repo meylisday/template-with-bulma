@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Hello Bulma!</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css">
 </head>
 
 <body>
@@ -42,7 +43,22 @@
                 <div class="tile is-vertical is-9">
                     <div class="tile">
                         <div class="tile is-parent is-vertical sale subancestor">
-                            <img src="assets/i/carnew.png" alt="" id="car">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/i/carnew.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/i/ford-slider.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/i/kia-slider.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/i/volkswagen-slider.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="sale-block-1">
                                 <h2>20-22 ЯНВАРЯ</h2>
                             </div>
@@ -53,6 +69,7 @@
                                 <h2>
                                     <span>в</span> АТЛАНТ-М</h2>
                             </div>
+                            <!-- <img src="assets/i/carnew.png" alt="" id="car"> -->
                         </div>
                         <div class="tile is-parent is-4 subancestor">
                             <article class="tile is-child">
@@ -520,6 +537,7 @@
                 <span> AshwoodCreative</span> © 2017</p>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -585,6 +603,14 @@
             $("#ajax-tab-content").addClass("hidden");
             $("#angularjs-tab-content").addClass("hidden");
         }
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
     </script>
 </body>
 
